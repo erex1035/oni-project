@@ -1,0 +1,188 @@
+.login{
+    color: #fff;
+    border: 1px solid #fe5b3b;
+    padding: 7px 19px;
+    background-color: #f7694d;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.login a{
+    text-decoration: none;
+    color: #fff;
+
+}
+.login:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+    background-color: #fe5b3b;
+}
+
+.wihi{
+    height: 88vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.forma{
+   background-color: #d2d5db;
+   border-radius: 1rem;
+   box-shadow: 0px 0px 20px 1px #444;
+   padding: 40px;
+   display: flex;
+   flex-direction: column;
+   width: 30%;
+   font-family: Arial, Helvetica, sans-serif;
+}
+.forma h1{
+   margin-bottom: 30px;
+   text-align: center;
+   color: #f7694d;
+}
+.wihi h1{
+   margin-bottom: 30px;
+   font-size: 30px;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   text-transform: uppercase;
+
+}
+.forma input{
+   border: 1px solid #f7694d;
+   border-radius: 0.5rem;
+   padding: 10px;
+   margin: 10px 0 20px 0;
+}
+.forma input[type="text"] , input[type="password"]{
+   background-color: #ffffff;
+   border: 1px solid #444;
+   outline: none;
+}
+.forma input[type="text"]:focus , input[type="password"]:focus{
+   border: 1px solid #fe5b3b;
+}
+
+.forma input[type="submit"]{
+   background-color: #f7694d;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   font-weight: bold;
+   color: #ffffff;
+   cursor: pointer;
+}
+.forma input[type="submit"]:hover{
+   background-color: #fe5b3b;
+}
+.forma label{
+   font-weight: bold;
+}
+.forgot{
+   display: flex;
+   justify-content: space-between;
+}
+.forgot a{
+   text-decoration: underline;
+   color:#444;
+   font-style: italic;
+}
+.forgot a:active{
+   color: #f7694d;
+}
+/* Register */
+.rewi{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 88vh;
+}
+.register-forma {
+   background-color: #d2d5db;
+   border-radius: 1rem;
+   box-shadow: 0px 0px 20px 1px #444;
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
+   width: 30%;
+   font-family: Arial, Helvetica, sans-serif;
+ }
+
+ .register-forma h1 {
+   font-weight: bold;
+   text-transform: uppercase;
+   font-size: 30px;
+   margin-bottom: 30px;
+   text-align: center;
+   color: #f7694d;
+ }
+
+ .register-forma input {
+   border: 1px solid #f7694d;
+   border-radius: 0.5rem;
+   padding: 10px;
+   margin: 10px 0 20px 0;
+   font-size: 14px;
+   box-sizing: border-box;
+ }
+
+ .register-forma input[type="text"],
+ .register-forma input[type="password"] {
+   background-color: #ffffff;
+   border: 1px solid #444;
+   outline: none;
+ }
+
+ .register-forma input[type="text"]:focus,
+ .register-forma input[type="password"]:focus {
+   border: 1px solid #fe5b3b;
+ }
+
+ .register-forma input[type="submit"] {
+   background-color: #f7694d;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   font-weight: bold;
+   color: #ffffff;
+   border: none;
+   cursor: pointer;
+   transition: background-color 0.3s;
+ }
+
+ .register-forma input[type="submit"]:hover {
+   background-color: #fe5b3b;
+ }
+
+ .register-forma label {
+   font-weight: bold;
+   color: #444;
+ }
+
+ .register-forgot {
+   display: flex;
+   justify-content: center;
+   margin-top: 10px;
+ }
+
+ .register-forgot a {
+   text-decoration: underline;
+   color: #343a40;
+   font-style: italic;
+ }
+
+ .register-forgot a:active {
+   color: #f7694d;
+ }
+ .rewi button[type="submit"]{
+   padding: 10px;
+   border-radius: 0.5rem;
+   border: 1px solid black;
+   background-color: #f7694d;
+   color: #ffffff;
+   text-transform: uppercase;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+   letter-spacing: 1px;
+ }
+ .rewi button[type="submit"]:hover{
+   padding: 10px;
+   border-radius: 0.5rem;
+   background-color: #fe5b3b;
+ }

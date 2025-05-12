@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="styles/login-register.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/general.css">
+
+
+    <script src="scripts/script.js"></script>
+</head>
+<body>
+
+    <div class="overlay"></div>
+    <header class="site-header">
+        <nav class="site-logo">
+            Rent a Car <span>ONI</span>
+        </nav>
+        <nav class="nav-menu">
+            <a href="home.html">Home</a>
+            <a href="#why-choose-us">About Us</a>
+            <a href="">Rent a Car</a>
+            <a href="">Contact</a>
+            <div class="login-button"><a href="login.html">Log In</a></div>
+        </nav>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </header>
+
+    <div class="rewi">
+        <div class="register-forma">
+          <h1>Register</h1>
+     
+          <label for="regUsername">Username:</label>
+          <input type="text" id="regUsername" name="regUsername">
+     
+          <label for="regPassword">Password:</label>
+          <input type="password" id="regPassword" name="regPassword" required>
+     
+          <label>
+            <input type="checkbox" name="agree" required> I agree to the terms and conditions
+          </label>
+     
+          <label>
+            Gender:
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+          </label>
+          <br>
+          <input type="submit" onclick="register()">
+        </div>
+      </div>
+</body>
+</html>

@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent a Car ONI</title>
+    <link rel="icon" href="icons/logo-car.png" type="image/png">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/services.css">
+    <link rel="stylesheet" href="styles/carousel.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <script src="scripts/script.js"></script>
+
+</head>
+<body>
+    <div class="overlay"></div>
+    <header class="site-header">
+        <nav class="site-logo">
+            Rent a Car <span>ONI</span>
+        </nav>
+        <nav class="nav-menu">
+            <a href="home.html">Home</a>
+            <a href="#why-choose-us">About Us</a>
+            <a href="#browse-cars">Rent a Car</a>
+            <a href="#contact">Contact</a>
+            <div class="login-button"><a href="login.html">Log In</a></div>
+        </nav>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </header>
+   
+    <main class="body-view">
+        <div class="body-text">
+            <p>Rent, Drive, Enjoy!</p>
+            <p>Flexible Rental Plans, Quality Vehicles. Start Your Journey Today.
+                Simplified Booking, Unbeatable Service.Your Trusted Car Rental!</p>
+            <a href="#browse-cars">Browse Available Cars<i class="fa-solid fa-arrow-down"></i></a>
+        </div>
+        <div class="body-image">
+            <img src="images/2019102501_VW_Golf.jpg" alt="Technical Issues">
+        </div>
+    </main>
+    <p id="browse-cars"></p>
+    <hr class="first-hr">
+
+    <div class="fleet-container">
+        <div class="fleet-header">
+            <div class="view-all">
+                <button class="view-all-btn">View All</button>
+            </div>
+            <h1 class="fleet-title">Meet the Fleet</h1>
+            <button class="filter-btn">
+                <i class="fas fa-filter"></i>
+                Filter
+            </button>
+             </div>
+        
+        <!-- Filter Modal -->
+        <div class="filter-modal" id="filterModal">
+            <div class="filter-content">
+                <div class="filter-header">
+                    <h2 class="filter-title">Filter Vehicles</h2>
+                    <button class="close-filter">&times;</button>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="brand-filter" class="filter-label">Brand</label>
+                    <select id="brand-filter" class="filter-select">
+                        <option value="">All Brands</option>
+                        <option value="ford">Ford</option>
+                        <option value="toyota">Toyota</option>
+                        <option value="chevrolet">Chevrolet</option>
+                        <option value="bmw">BMW</option>
+                        <option value="honda">Honda</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="model-filter" class="filter-label">Model</label>
+                    <select id="model-filter" class="filter-select" disabled>
+                        <option value="">Select brand first</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="category-filter" class="filter-label">Category</label>
+                    <select id="category-filter" class="filter-select">
+                        <option value="">All Categories</option>
+                        <option value="truck">Truck</option>
+                        <option value="compact">Compact Car</option>
+                        <option value="luxury">Luxury Car</option>
+                        <option value="suv">Standard SUV</option>
+                        <option value="minivan">Minivan</option>
+                        <option value="sport">Sports Car</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="price-range" class="filter-label">Price Range</label>
+                    <input type="number" id="price-range" class="filter-input" min="0" max="300" step="10" value="300">
+                    <div class="price-display">Up to $<span id="price-value">300</span>/day</div>
+                </div>
+                
+                <div class="filter-actions">
+                    <button class="reset-btn" id="resetFilters">Reset</button>
+                    <button class="apply-btn" id="applyFilters">Apply Filters</button>
+                </div>
+            </div>
+        </div>
+
+        
+        
+        <div class="carousel-wrapper">
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <!-- Car 1 -->
+                    <div class="car-item">
+                      <img src="images/ford-mustang.avif" alt="Ford Mustang">
+                      <div class="car-info">
+                          <div class="car-name">Ford Mustang</div>
+                          <div class="car-price">$129/day</div>
+                      </div>
+                      <div class="car-buttons">
+                          <button>Rent</button>
+                          <button>Details</button>
+                      </div>
+                  </div>
+                    
+                    <!-- Car 2 -->
+                    <div class="car-item">
+                      <img src="images/porsche.avif" alt="Porsche">
+                      <div class="car-info">
+                          <div class="car-name">Porsche Cayenne</div>
+                          <div class="car-price">$59/day</div>
+                      </div>
+                      <div class="car-buttons">
+                          <button>Rent</button>
+                          <button>Details</button>
+                      </div>
+                  </div>
+                  
+                    
+                    <!-- Car 3 -->
+                    <div class="car-item">
+                      <img src="images/2018-Nissan-GT-R-rear-three-quarter.jpg" alt="SUV">
+                      <div class="car-info">
+                          <div class="car-name">Nissan GT-R</div>
+                          <div class="car-price">$89/day</div>
+                      </div>
+                      <div class="car-buttons">
+                          <button>Rent</button>
+                          <button>Details</button>
+                      </div>
+                  </div>
+                    
+                    <!-- Car 4 -->
+                    <div class="car-item">
+                      <img src="images/bmwz4.jpg" alt="Convertible">
+                      <div class="car-info">
+                          <div class="car-name">BMW Z4</div>
+                          <div class="car-price">$149/day</div>
+                      </div>
+                      <div class="car-buttons">
+                          <button>Rent</button>
+                          <button>Details</button>
+                      </div>
+                  </div>
+                    
+                    <!-- Car 5 -->
+                    <div class="car-item">
+                      <img src="images/bmw3series.avif" alt="Compact Car">
+                      <div class="car-info">
+                          <div class="car-name">BMW M340i</div>
+                          <div class="car-price">$49/day</div>
+                      </div>
+                      <div class="car-buttons">
+                          <button>Rent</button>
+                          <button>Details</button>
+                      </div>
+                  </div>
+                </div>
+            </div>
+            
+            <!-- Navigation Arrows -->
+            <div class="carousel-nav">
+                <button class="nav-arrow prev">&lt;</button>
+                <button class="nav-arrow next">&gt;</button>
+            </div>
+        </div>
+    </div>
+
+    <hr class="first-hr" style="margin-top: 30px;">
+
+    <div class="features-section" id="why-choose-us">        
+        <h2>Why Choose Us?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <span class="feature-icon"><i class="fa-solid fa-car"></i></span>
+                <h3>Wide Selection</h3>
+                <p>Choose from economy cars, luxury vehicles, SUVs, and vans</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon"><i class="fa-solid fa-money-check-dollar"></i></span>
+                <h3>Best Prices</h3>
+                <p>Competitive rates with no hidden fees</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon"><i class="fa-solid fa-clock"></i></span>
+                <h3>Quick Booking</h3>
+                <p>Reserve your car online in just 2 minutes</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon"><i class="fa-solid fa-phone"></i></span>
+                <h3>24/7 Support</h3>
+                <p>Our team is always ready to assist you</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer" id="contact">
+        <div class="footer-agents">
+          <!-- Agent 1 -->
+          <div class="agent-card">
+            <div class="agent-icon">
+              <i class="fas fa-user-tie"></i>
+            </div>
+            <div class="agent-info">
+              <h3>John Smith</h3>
+              <p>Senior Rental Agent</p>
+              <div class="agent-contact">
+                <a href="tel:+1234567890"><i class="fas fa-phone"></i> (123) 456-7890</a>
+                <a href="mailto:john@rentacaron.com"><i class="fas fa-envelope"></i> Email</a>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Agent 2 -->
+          <div class="agent-card">
+            <div class="agent-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <div class="agent-info">
+              <h3>Sarah Johnson</h3>
+              <p>Corporate Accounts</p>
+              <div class="agent-contact">
+                <a href="tel:+1234567891"><i class="fas fa-phone"></i> (123) 456-7891</a>
+                <a href="mailto:sarah@rentacaron.com"><i class="fas fa-envelope"></i> Email</a>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Agent 3 -->
+          <div class="agent-card">
+            <div class="agent-icon">
+              <i class="fas fa-headset"></i>
+            </div>
+            <div class="agent-info">
+              <h3>Mike Williams</h3>
+              <p>Customer Support</p>
+              <div class="agent-contact">
+                <a href="tel:+1234567892"><i class="fas fa-phone"></i> (123) 456-7892</a>
+                <a href="mailto:mike@rentacaron.com"><i class="fas fa-envelope"></i> Email</a>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Agent 4 -->
+          <div class="agent-card">
+            <div class="agent-icon">
+              <i class="fas fa-calendar-check"></i>
+            </div>
+            <div class="agent-info">
+              <h3>Lisa Chen</h3>
+              <p>Reservations Specialist</p>
+              <div class="agent-contact">
+                <a href="tel:+1234567893"><i class="fas fa-phone"></i> (123) 456-7893</a>
+                <a href="mailto:lisa@rentacaron.com"><i class="fas fa-envelope"></i> Email</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="footer-bottom">
+          <div class="footer-contact">
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>123 Rental Street, Cityville, ST 12345</p>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <p><a href="tel:+18005551234">1-800-555-1234</a></p>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <p><a href="mailto:info@rentacaron.com">info@rentacaron.com</a></p>
+            </div>
+          </div>
+      
+          <div class="footer-social">
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+      
+          <div class="footer-copyright">
+            <p>&copy; 2025 Rent a Car ONI. All rights reserved.</p>
+            <div class="legal-links">
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms of Service</a>
+              <a href="#">Sitemap</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+       
+      <!-- MODAL DETAILS-->
+<div class="details-modal" id="detailsModal">
+  <div class="modal-content">
+    <button class="close-modal">&times;</button>
+    <div class="modal-body">
+      <div class="modal-car-image">
+        <img id="modalCarImage" src="" alt="Car Image" loading="lazy">
+      </div>
+      <div class="modal-car-info">
+        <h2 id="modalCarName"></h2>
+        <p class="modal-car-price" id="modalCarPrice"></p>
+        
+        <div class="car-specs-grid">
+          <div class="spec-item">
+            <i class="fas fa-car"></i>
+            <div>
+              <span class="spec-label">Type</span>
+              <span class="spec-value" id="modalCarType"></span>
+            </div>
+          </div>
+          <div class="spec-item">
+            <i class="fas fa-tachometer-alt"></i>
+            <div>
+              <span class="spec-label">Engine</span>
+              <span class="spec-value" id="modalCarEngine"></span>
+            </div>
+          </div>
+          <div class="spec-item">
+            <i class="fas fa-cogs"></i>
+            <div>
+              <span class="spec-label">Transmission</span>
+              <span class="spec-value" id="modalCarTransmission"></span>
+            </div>
+          </div>
+          <div class="spec-item">
+            <i class="fas fa-users"></i>
+            <div>
+              <span class="spec-label">Seats</span>
+              <span class="spec-value" id="modalCarSeats"></span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="modal-actions">
+          <button class="rent-now-btn">
+            <i class="fas fa-calendar-check"></i> Rent Now
+          </button>
+          <button class="call-btn">
+            <i class="fas fa-phone"></i> Call Agent
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- MODAL DETAILS -->
+
+<!-- MODAL RENT -->
+<div class="rental-modal" id="rentalFormModal">
+  <div class="rental-modal-content">
+    <button class="close-rental-modal">&times;</button>
+    <h2>Rent <span id="rentalCarName"></span></h2>
+    
+    <form id="rentalForm">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="pickupDate">Pickup Date</label>
+          <input type="date" id="pickupDate" required>
+        </div>
+        <div class="form-group">
+          <label for="returnDate">Return Date</label>
+          <input type="date" id="returnDate" required>
+        </div>
+      </div>
+      
+      <div class="form-row">
+        <div class="form-group">
+          <label for="pickupLocation">Pickup Location</label>
+          <select id="pickupLocation" required>
+            <option value="">Select location</option>
+            <option value="main">Main Office</option>
+            <option value="airport">Airport</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="returnLocation">Return Location</label>
+          <select id="returnLocation" required>
+            <option value="">Select location</option>
+            <option value="same">Same as Pickup</option>
+            <option value="main">Main Office</option>
+          </select>
+        </div>
+      </div>
+      
+      <button type="submit" class="submit-btn">Confirm Booking</button>
+    </form>
+  </div>
+</div>
+
+<!-- MODAL RENT -->
+    <script src="scripts/script1.js"></script>
+</body>
+</html>
