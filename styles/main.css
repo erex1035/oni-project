@@ -152,7 +152,7 @@
 }
 @media (max-width: 360px){
     body{
-        padding-top: 50px;
+        padding-top: 20px;
         margin: 0;
     }
     .body-view{
