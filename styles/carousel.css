@@ -235,6 +235,7 @@
     font-weight: bold;
     margin-bottom: 5px;
     color: #24262b;
+    white-space: no-wrap;
 }
 
 .car-type {
