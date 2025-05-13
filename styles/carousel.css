@@ -235,7 +235,7 @@
     font-weight: bold;
     margin-bottom: 5px;
     color: #24262b;
-    white-space: no-wrap;
+    white-space: nowrap;
 }
 
 .car-type {
@@ -615,9 +615,6 @@
 }
 
 @media (max-width: 360px){
-   .car-item{
-        width: 100%;
-    }
     .fleet-title {
         font-size: 1rem;
         text-align: center;
