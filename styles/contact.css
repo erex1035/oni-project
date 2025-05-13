@@ -218,7 +218,16 @@
   
   @media (max-width: 480px) {
     .footer-agents {
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr 1fr;
+    }
+    .agent-info h3{
+      font-size: 1em;
+    }
+    .agent-info p{
+      font-size: 0.8em;
+    }
+    .agent-contact a{
+      font-size: 0.6em;
     }
     
     .footer-contact {

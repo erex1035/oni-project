@@ -639,4 +639,141 @@
     .fleet-header{
         margin-bottom: 10px;
     }
+   .modal-content {
+        width: 90%; /* Slightly smaller width */
+        max-width: 320px; /* Reduced max-width */
+        height: auto; /* Allow height to adjust based on content */
+        border-radius: 8px;
+        padding: 10px;
+    }
+
+    .close-modal {
+        top: 10px;
+        right: 10px;
+        width: 28px; /* Smaller close button */
+        height: 28px;
+        font-size: 14px;
+    }
+
+    .modal-car-image {
+        height: 120px; /* Reduced image size */
+    }
+
+    .modal-car-info {
+        padding: 5px;
+    }
+
+    .modal-car-info h2 {
+        font-size: 0.9rem; /* Smaller heading font size */
+    }
+
+    .modal-car-price {
+        font-size: 0.9rem; /* Smaller price font size */
+        margin-bottom: 5px;
+    }
+
+    .car-specs-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+
+    .spec-item {
+        padding: 6px;
+        gap: 6px;
+    }
+
+    .spec-item i {
+        font-size: 0.9rem;
+        width: 20px;
+    }
+
+    .spec-label {
+        font-size: 0.7rem;
+    }
+
+    .spec-value {
+        font-size: 0.8rem;
+    }
+
+    .modal-actions {
+        gap: 6px;
+        margin-top: 15px;
+    }
+
+    .rent-now-btn,
+    .call-btn {
+        font-size: 0.8rem; /* Smaller font size */
+        padding: 10px;
+        border-radius: 6px;
+        gap: 6px;
+    }
+
+    /* RENT MODAL responsiveness */
+  
+  
+  .rental-modal-content {
+    background: white;
+    width: 85%; /* Slightly reduced width */
+    height: auto; /* Adjust height automatically based on content */
+    margin: auto;
+    padding: 10px; /* Reduced padding */
+    border-radius: 8px; /* Slightly smaller border radius */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.close-rental-modal {
+    position: absolute;
+    top: 10px; /* Reduced space from top */
+    right: 10px; /* Reduced space from right */
+    background: none;
+    border: none;
+    font-size: 20px; /* Smaller close button */
+    cursor: pointer;
+}
+
+.form-row {
+    display: flex;
+    gap: 8px; /* Reduced gap */
+    margin-bottom: 8px; /* Reduced margin */
+    width: 100%;
+}
+
+.form-group {
+    flex: 1;
+    width: 100%;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px; /* Reduced margin */
+    font-size: 0.9rem; /* Smaller font size for labels */
+}
+
+.form-group input,
+.form-group select {
+    width: 85%; /* Slightly reduced width */
+    padding: 8px; /* Reduced padding */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 0.9rem; /* Smaller font size */
+}
+.rental-modal-content h2{
+  font-size: 1.2em;
+}
+
+.submit-btn {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px; /* Reduced padding */
+    width: 100%;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.9rem; /* Smaller font size */
+    cursor: pointer;
+}
+
 }
