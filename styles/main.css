@@ -115,6 +115,10 @@
     }
 }
 @media (max-width: 500px){
+    .body-image img{
+        object-fit: contain;
+        object-position: top;
+    }
     .body-view{
         padding-top:  25px;
         background-color: #24262b;
@@ -123,6 +127,8 @@
        font-size: 25px;
     }
     .body-text{
+         flex: none;
+        height: fit-content;
         background-color:#24262b;
         color: rgb( 200, 200, 200);
         padding: 0;
@@ -146,7 +152,7 @@
 }
 @media (max-width: 360px){
     body{
-        padding-top: 10px;
+        padding-top: 20px;
         margin: 0;
     }
     .body-view{
@@ -154,6 +160,8 @@
         margin: 0;
     }
     .body-text{
+        flex: none;
+        height: fit-content;
         margin-top: 0;
         padding-top: 0;
         width: 100%;
