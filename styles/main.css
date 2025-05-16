@@ -74,10 +74,18 @@
 @media (max-width: 942px){
     .body-view{
         flex-direction: column-reverse;
-        padding: 10px 0;
-        padding-top: 80px;
+        justify-content: flex-end;
+        padding: 0;
+        padding-top: 70px;
         background-color: #24262b;
         gap: 0;
+    }
+    body{
+        padding-top: 0;
+        margin: 0;
+    }
+    .body-image{
+        background-color: #24262b;
     }
     .body-image img{
         border-radius: 0;
@@ -106,6 +114,11 @@
         background-color: rgb(247, 105, 77);
     }
 }
+@media (max-width: 768px){
+    .body-view{
+        padding-top: 55px;
+    }
+}
 @media (max-width: 630px){
     .body-view{
         padding-top: 50px;
@@ -120,7 +133,7 @@
         object-position: top;
     }
     .body-view{
-        padding-top:  25px;
+        padding-top:  50px;
         background-color: #24262b;
     }
     .body-text :nth-child(1){
@@ -146,17 +159,14 @@
         font-size: 13px;
         margin: 0 30px;
     }
-    body{
-        padding-top: 40px;
-    }
 }
 @media (max-width: 360px){
     body{
-        padding-top: 20px;
+        padding-top: 0;
         margin: 0;
     }
     .body-view{
-        padding-top: 0;
+        padding-top: 50px;
         margin: 0;
     }
     .body-text{
